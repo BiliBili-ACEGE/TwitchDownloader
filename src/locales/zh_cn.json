@@ -1,0 +1,32 @@
+{
+  "appearance": "外观",
+  "clear": "清除",
+  "dark": "暗黑",
+  "dontOpen": "不要打开",
+  "download": "下载",
+  "downloadFolder": "下载文件夹",
+  "downloads": "下载",
+  "downloadAnother": "下载另一个",
+  "fileName": "文件名称",
+  "general": "常规",
+  "getQualities": "获取画质",
+  "language": "语言",
+  "languages": {
+    "de": "Deutsch",
+    "en": "English",
+    "es": "Spanish",
+    "fr": "French",
+    "it": "Italian",
+    "zh_cn": "Chinese Simplified"
+  },
+  "loading": "加载中...",
+  "light": "明亮",
+  "open": "打开",
+  "openFolderOnDownload": "打开下载文件夹",
+  "save": "保存",
+  "selectFolder": "选择文件夹",
+  "selectedFolder": "已选择文件夹: ",
+  "selectQuality": "选择画质:",
+  "theme": "主题",
+  "twitchUrl": "Twitch 链接:"
+}
