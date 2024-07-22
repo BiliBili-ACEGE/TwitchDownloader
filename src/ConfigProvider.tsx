@@ -8,40 +8,45 @@ import enTranslations from './locales/en.json'
 import esTranslations from './locales/es.json'
 import frTranslations from './locales/fr.json'
 import itTranslations from './locales/it.json'
+import zhTranslations from './locales/zh_cn.json'
 import { useEffect, useState } from 'preact/hooks'
 import { ConfigContext } from './ConfigContext.ts'
 
 export const ConfigProvider = ({
-  children
+    children
 }: {
-  children: ComponentChildren
+    children: ComponentChildren
 }) => {
-  const [config, setConfig] = useState<Config | null>(null)
+    const [config, setConfig] = useState<Config | null>(null)
 
-  i18next.use(initReactI18next).init({
-    resources: {
-      de: {
-        translation: deTranslations
-      },
-      en: {
-        translation: enTranslations
-      },
-      es: {
-        translation: esTranslations
-      },
-      fr: {
-        translation: frTranslations
-      },
-      it: {
-        translation: itTranslations
-      }
-    },
-    lng: DEFAULT_LANGUAGE,
-    fallbackLng: DEFAULT_LANGUAGE,
-    interpolation: {
-      escapeValue: false
-    }
-  })
+    i18next.use(initReactI18next).init({
+        resources: {
+            de: {
+                translation: deTranslations
+            },
+            en: {
+                translation: enTranslations
+            },
+            es: {
+                translation: esTranslations
+            },
+            fr: {
+                translation: frTranslations
+            },
+            it: {
+                translation: itTranslations
+            },
+            zh: {
+                translation: zhTranslations
+            }
+        },
+        lng: DEFAULT_LANGUAGE, 
+        fallbackLng: DEFAULT_LANGUAGE, 
+        interpolation: {
+            escapeValue: false
+        }
+    })
+
 
   useEffect(() => {
     if (config) {
